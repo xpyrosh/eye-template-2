@@ -1,7 +1,122 @@
-@import 'utilities';
 @import 'config';
+@import 'utilities';
 
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    // background: $bg-color;
+    background: $secondary-color;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-nav {
+    background: $primary-color;
+
+    #nav-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0;
+        background: white;
+        div {
+            padding-left: 1rem;
+            h1{
+                // color: $secondary-color;
+                font-size: 2.5rem;
+            }
+            span {
+                // color: $tertiary-color;
+                float: right;
+            }
+        }
+    }
+
+    .nav-content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    a {
+        color: $bg-color-light;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: block;
+        width: 150px;
+
+        &:hover {
+            background: $secondary-color;
+            // border-radius: 25px 25px 0 0;
+            color: white;
+        }
+    }
+
+    .current {
+        background: $secondary-color;
+        // border-radius: 25px 25px 0 0;
+        color: white;
+        font-weight: bolder;
+    }
+
+    img {
+        height: auto;
+        width: auto;
+        max-height: 5rem;
+    }
+}
+
+#home {
+    // background: url(/img/main.jpg) no-repeat center right / cover;
+    // height: 80vh;
+    #home-a {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 0;
+        align-items: center;
+        text-align: left;
+        // background: white;
+        h1 {
+            font-size: 3rem;
+            color: white;
+        }
+        span {
+            color: $tertiary-color;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                padding-left: .5rem;
+                height: auto;
+                width: auto;
+                max-height: 250px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    #home-b {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
 }
