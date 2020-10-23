@@ -3,17 +3,19 @@
   position: relative;
   padding: 0 1.5rem;
   margin: auto;
-  text-align: center;
-  overflow: hidden; }
+  text-align: center; }
 
 .card {
-  background: #ebebeb;
+  background: #f9f9f9;
+  border: 1px solid #cccccc;
   padding: 1.5rem 2rem;
   border-radius: 25px;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-filter: drop-shadow(0px 5px 10px #cccccc);
+  filter: drop-shadow(0px 5px 10px #cccccc); }
   .card h1 {
     font-size: 2rem;
     color: #0072ae;
@@ -39,7 +41,7 @@
   border-radius: 25px;
   transition: all .5s; }
   .btn-learn:hover {
-    background: #f4e4c1;
+    background: #e9d19e;
     color: #080f5b; }
 
 * {
