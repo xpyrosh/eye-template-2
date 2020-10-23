@@ -8,7 +8,7 @@
 }
 
 .card {
-    background: white;
+    background: #ebebeb;
     padding: 1.5rem 2rem;
     border-radius: 25px;
     align-items: center;
@@ -18,7 +18,7 @@
 
     h1 {
         font-size: 2rem;
-        color: $tertiary-color;
+        color: $eye-color;
         padding-bottom: 1rem;
     }
 
@@ -33,7 +33,7 @@
         line-height: 1.3;
 
         span {
-            color: $secondary-color;
+            color: $primary-color;
             font-weight: bold;
         }
     }
@@ -42,15 +42,16 @@
 .btn-learn {
     margin-top: 1.5rem;
     display: block;
-    background: $quatenary-color;
-    color: $secondary-color;
+    background: $fifth-color;
+    background: #f8bd7f;
+    color: black;
     padding: 1rem 2.5rem;
     border-radius: 25px;
     transition: all .5s;
     // font-weight: bold;
 
     &:hover {
-        background: $fifth-color;
+        background: $quatenary-color;
         color: $primary-color;
     }
 }

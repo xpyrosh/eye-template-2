@@ -10,6 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
     // background: $bg-color;
     background: $secondary-color;
+    background: url(/img/webb.png) repeat;
 }
 
 ul {
@@ -21,7 +22,7 @@ a {
 }
 
 #main-nav {
-    background: $primary-color;
+    background: $eye-color;
 
     #nav-heading{
         display: flex;
@@ -63,14 +64,14 @@ a {
         width: 150px;
 
         &:hover {
-            background: $secondary-color;
+            background: $eye-color-dark;
             // border-radius: 25px 25px 0 0;
             color: white;
         }
     }
 
     .current {
-        background: $secondary-color;
+        background: $eye-color-dark;
         // border-radius: 25px 25px 0 0;
         color: white;
         font-weight: bolder;
@@ -92,13 +93,12 @@ a {
         padding: 3rem 0;
         align-items: center;
         text-align: left;
-        // background: white;
         h1 {
             font-size: 3rem;
-            color: white;
+            color: $eye-color;
         }
         span {
-            color: $tertiary-color;
+            color: $eye-color-dark;
         }
         .images {
             display: flex;
