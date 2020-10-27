@@ -66,6 +66,7 @@ a {
         font-weight: bold;
         display: block;
         width: 150px;
+        transition: all .5s;
 
         &:hover {
             background: $eye-color-dark;
@@ -94,7 +95,7 @@ a {
     #home-a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 3rem 0;
+        padding: 2.5rem 0;
         align-items: center;
         text-align: left;
         h1 {
@@ -121,7 +122,7 @@ a {
     #home-b {
         padding-bottom: 3rem;
         display: grid;
-        gap: 2rem;
+        gap: 1.5rem;
         grid-template-columns: 2fr 1fr 1fr;
 
         // Our prosthetics needs special formatting for inner content
@@ -149,7 +150,7 @@ a {
 #about {
     #about-a {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
         grid-auto-rows: 1fr;
         padding: 3rem 0;
