@@ -151,15 +151,16 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+        grid-auto-rows: 1fr;
         padding: 3rem 0;
-        align-items: center;
+        align-items: start;
         justify-content: center;
 
         .info-cards {
             display: flex;
         }
 
-        
+
     }
 }
 
