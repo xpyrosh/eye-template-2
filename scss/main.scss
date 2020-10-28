@@ -150,9 +150,8 @@ a {
 #about {
     #about-a {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        grid-auto-rows: 1fr;
         padding: 3rem 0;
         align-items: start;
         justify-content: center;
@@ -167,7 +166,7 @@ a {
 
 #footer {
     padding: 4rem 0;
-    box-shadow: 0px 0px 10px #979797;
+    box-shadow: 0px 0px 10px #cccccc;
     background: #f9f9f9;
 
     .footer-content {
