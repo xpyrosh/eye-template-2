@@ -10,6 +10,7 @@ function openLocation(evt, locName){
 }
 
 // Not working
-// function myFunction(){
-//     document.getElementById("loc-tabs").firstChild.style.borderTop = '1px solid #004c8c';
-// }
+function myFunction(){
+    // let x = document.getElementById("loc-tabs").firstChild;
+    // console.log(x);
+}

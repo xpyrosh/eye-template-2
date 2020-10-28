@@ -190,8 +190,7 @@ a {
   #contact #contact-a .loc-tabs {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
     #contact #contact-a .loc-tabs .tablink {
       display: block;
       width: 100%;
