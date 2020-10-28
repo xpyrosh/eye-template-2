@@ -66,6 +66,7 @@ a {
         font-weight: bold;
         display: block;
         width: 150px;
+        cursor: pointer;
         transition: all .5s;
 
         &:hover {
@@ -160,7 +161,7 @@ a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
-        padding: 3rem 0;
+        padding: 2rem 0;
         align-items: start;
         justify-content: center;
 
@@ -168,6 +169,55 @@ a {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+        }
+    }
+}
+
+#contact {
+    #contact-a {
+        margin: 2rem 0;
+        background: $eye-color;
+        overflow: hidden;
+        border-radius: 25px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        box-shadow: 0 0 10px #cccccc;
+
+        iframe {
+            width: 100%;
+            display: block;
+        }
+
+        #tab-contents {
+            #Hamilton {
+                display: none;
+            }
+            #StLucia {
+                display: none;
+            }
+        }
+
+        .loc-tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .tablink {
+                display: block;
+                width: 100%;
+                padding: 2rem 0;
+                margin: 0;
+                background: $eye-color;
+                color: white;
+                font-size: 1.25rem;
+                font-weight: bold;
+                transition: all .5s;
+                border-bottom: 1px solid $eye-color-dark;
+                &:hover {
+                    background: $eye-color-dark;
+                }
+            }
         }
     }
 }

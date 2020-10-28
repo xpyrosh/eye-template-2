@@ -25,6 +25,7 @@
     color: #080f5b; }
   .card p {
     font-size: 1.2rem;
+    line-height: 1.4;
     padding: 1rem; }
     .card p span {
       color: #080f5b;
@@ -98,6 +99,7 @@ a {
     font-weight: bold;
     display: block;
     width: 150px;
+    cursor: pointer;
     transition: all .5s; }
     #main-nav a:hover {
       background: #004c8c;
@@ -162,13 +164,47 @@ a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
-  padding: 3rem 0;
+  padding: 2rem 0;
   align-items: start;
   justify-content: center; }
   #about #about-a .background {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem; }
+
+#contact #contact-a {
+  margin: 2rem 0;
+  background: #0072ae;
+  overflow: hidden;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  box-shadow: 0 0 10px #cccccc; }
+  #contact #contact-a iframe {
+    width: 100%;
+    display: block; }
+  #contact #contact-a #tab-contents #Hamilton {
+    display: none; }
+  #contact #contact-a #tab-contents #StLucia {
+    display: none; }
+  #contact #contact-a .loc-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #contact #contact-a .loc-tabs .tablink {
+      display: block;
+      width: 100%;
+      padding: 2rem 0;
+      margin: 0;
+      background: #0072ae;
+      color: white;
+      font-size: 1.25rem;
+      font-weight: bold;
+      transition: all .5s;
+      border-bottom: 1px solid #004c8c; }
+      #contact #contact-a .loc-tabs .tablink:hover {
+        background: #004c8c; }
 
 #footer {
   padding: 4rem 0;
