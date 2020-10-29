@@ -172,27 +172,28 @@ a {
         background: #ededed;
         border-radius: 15px; }
 
-#about .about-banner {
-  width: 100%;
-  height: 35vh;
-  justify-content: center;
-  object-fit: cover;
-  box-shadow: 0px 5px 10px #cccccc; }
-
-#about #about-a {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  gap: 1.5rem;
-  padding: 2rem 0;
-  align-items: start;
-  justify-content: center; }
-  #about #about-a h1 {
-    text-transform: uppercase; }
-  #about #about-a .background {
+#about {
+  background: url(/img/webb.png) repeat; }
+  #about .about-banner {
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px #cccccc; }
+  #about #about-a {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem; }
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    align-items: start;
+    justify-content: center; }
+    #about #about-a h1 {
+      text-transform: uppercase; }
+    #about #about-a .background {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem; }
 
 *, *:focus, *:hover {
   outline: none; }
@@ -246,10 +247,20 @@ a {
     #contact #contact-b iframe {
       width: 100%;
       display: block; }
-    #contact #contact-b #tab-contents #Hamilton {
-      display: none; }
-    #contact #contact-b #tab-contents #StLucia {
-      display: none; }
+    #contact #contact-b #tab-contents {
+      background: #cccccc; }
+      #contact #contact-b #tab-contents #Hamilton {
+        display: none; }
+      #contact #contact-b #tab-contents #StLucia {
+        display: none; }
+      #contact #contact-b #tab-contents .tab-content {
+        animation: fade 1s; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
     #contact #contact-b .loc-tabs {
       display: flex;
       align-items: center; }

@@ -142,6 +142,7 @@ a {
 }
 
 #about {
+    background: url(/img/webb.png) repeat;
     .about-banner {
         width: 100%;
         height: 35vh;
@@ -249,11 +250,20 @@ a {
         }
 
         #tab-contents {
+            background: #cccccc;
             #Hamilton {
                 display: none;
             }
             #StLucia {
                 display: none;
+            }
+
+            .tab-content {
+                animation: fade 1s;
+                @keyframes fade {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
             }
         }
 
