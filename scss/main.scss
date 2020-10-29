@@ -178,16 +178,21 @@ a {
 
 #contact {
     background: url(/img/webb.png) repeat;
-    .container {
+    padding: 2rem 0;
+    #contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 3fr;
-        gap: 1.5rem;
+        // gap: 1.5rem;
+        box-shadow: 0 5px 10px #cccccc;
+        // margin: 2rem 0;
+        border-radius: 25px;
+        overflow: hidden;
     }
     #contact-a {
         background: #f9f9f9;
-        margin: 2rem 0;
-        box-shadow: 0 5px 10px #cccccc;
-        border-radius: 25px;
+        // margin: 2rem 0;
+        // box-shadow: 0 5px 10px #cccccc;
+        border-radius: 25px 0 0 25px;
         border: 1px solid #cccccc;
         padding: 2rem 3rem;
 
@@ -236,13 +241,15 @@ a {
     }
 
     #contact-b {
-        margin: 2rem 0;
+        // margin: 2rem 0;
         background: $eye-color;
         overflow: hidden;
-        border-radius: 25px;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #cccccc;
+        border-left: none;
         // display: grid;
         // grid-template-columns: 4fr 1fr;
-        box-shadow: 0 5px 10px #cccccc;
+        // box-shadow: 0 5px 10px #cccccc;
 
         iframe {
             width: 100%;

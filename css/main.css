@@ -199,16 +199,17 @@ a {
   outline: none; }
 
 #contact {
-  background: url(/img/webb.png) repeat; }
-  #contact .container {
+  background: url(/img/webb.png) repeat;
+  padding: 2rem 0; }
+  #contact #contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 1.5rem; }
-  #contact #contact-a {
-    background: #f9f9f9;
-    margin: 2rem 0;
     box-shadow: 0 5px 10px #cccccc;
     border-radius: 25px;
+    overflow: hidden; }
+  #contact #contact-a {
+    background: #f9f9f9;
+    border-radius: 25px 0 0 25px;
     border: 1px solid #cccccc;
     padding: 2rem 3rem; }
     #contact #contact-a #contact-form {
@@ -239,11 +240,11 @@ a {
       border: none;
       font-size: 1rem; }
   #contact #contact-b {
-    margin: 2rem 0;
     background: #0072ae;
     overflow: hidden;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px #cccccc; }
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #cccccc;
+    border-left: none; }
     #contact #contact-b iframe {
       width: 100%;
       display: block; }
