@@ -236,7 +236,7 @@ a {
       #contact #contact-a .text-fields textarea {
         height: 200px; }
     #contact #contact-a button {
-      display: block;
+      display: inline;
       border: none;
       font-size: 1rem; }
   #contact #contact-b {
