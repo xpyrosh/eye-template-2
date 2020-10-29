@@ -187,6 +187,8 @@ a {
   padding: 2rem 0;
   align-items: start;
   justify-content: center; }
+  #about #about-a h1 {
+    text-transform: uppercase; }
   #about #about-a .background {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -195,75 +197,76 @@ a {
 *, *:focus, *:hover {
   outline: none; }
 
-#contact .container {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 1.5rem; }
-
-#contact #contact-a {
-  margin: 2rem 0;
-  box-shadow: 0 5px 10px #cccccc;
-  border-radius: 25px;
-  border: 1px solid #cccccc;
-  padding: 2rem 3rem; }
-  #contact #contact-a #contact-form {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: space-between; }
-  #contact #contact-a h2 {
-    color: #080f5b;
-    padding-bottom: 1rem; }
-  #contact #contact-a .text-fields {
-    display: flex;
-    flex-direction: column; }
-    #contact #contact-a .text-fields .text-input {
-      font-size: 1rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 25px;
-      border: 1px solid #0072ae; }
-    #contact #contact-a .text-fields .text-input:focus {
-      -webkit-box-shadow: 0 0 5px #0072ae;
-      -moz-box-shadow: 0 0 5px #0072ae;
-      box-shadow: 0 0 5px #0072ae; }
-    #contact #contact-a .text-fields textarea {
-      height: 200px; }
-  #contact #contact-a button {
-    display: block;
-    border: none;
-    font-size: 1rem; }
-
-#contact #contact-b {
-  margin: 2rem 0;
-  background: #0072ae;
-  overflow: hidden;
-  border-radius: 25px;
-  box-shadow: 0 5px 10px #cccccc; }
-  #contact #contact-b iframe {
-    width: 100%;
-    display: block; }
-  #contact #contact-b #tab-contents #Hamilton {
-    display: none; }
-  #contact #contact-b #tab-contents #StLucia {
-    display: none; }
-  #contact #contact-b .loc-tabs {
-    display: flex;
-    align-items: center; }
-    #contact #contact-b .loc-tabs .tablink {
+#contact {
+  background: url(/img/webb.png) repeat; }
+  #contact .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1.5rem; }
+  #contact #contact-a {
+    background: #f9f9f9;
+    margin: 2rem 0;
+    box-shadow: 0 5px 10px #cccccc;
+    border-radius: 25px;
+    border: 1px solid #cccccc;
+    padding: 2rem 3rem; }
+    #contact #contact-a #contact-form {
+      display: flex;
+      flex-direction: column;
+      height: 90%;
+      justify-content: space-between; }
+    #contact #contact-a h2 {
+      color: #080f5b;
+      padding-bottom: 1rem; }
+    #contact #contact-a .text-fields {
+      display: flex;
+      flex-direction: column; }
+      #contact #contact-a .text-fields .text-input {
+        font-size: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 25px;
+        border: 1px solid #b4b4b4; }
+      #contact #contact-a .text-fields .text-input:focus {
+        -webkit-box-shadow: 0 0 5px #0072ae;
+        -moz-box-shadow: 0 0 5px #0072ae;
+        box-shadow: 0 0 5px #0072ae; }
+      #contact #contact-a .text-fields textarea {
+        height: 200px; }
+    #contact #contact-a button {
       display: block;
+      border: none;
+      font-size: 1rem; }
+  #contact #contact-b {
+    margin: 2rem 0;
+    background: #0072ae;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px #cccccc; }
+    #contact #contact-b iframe {
       width: 100%;
-      padding: 2rem 0;
-      margin: 0;
-      background: #0072ae;
-      color: white;
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: all .5s;
-      border-bottom: 1px solid #004c8c; }
-      #contact #contact-b .loc-tabs .tablink:hover {
-        background: #004c8c; }
+      display: block; }
+    #contact #contact-b #tab-contents #Hamilton {
+      display: none; }
+    #contact #contact-b #tab-contents #StLucia {
+      display: none; }
+    #contact #contact-b .loc-tabs {
+      display: flex;
+      align-items: center; }
+      #contact #contact-b .loc-tabs .tablink {
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+        margin: 0;
+        background: #0072ae;
+        color: white;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all .5s;
+        border-bottom: 1px solid #004c8c; }
+        #contact #contact-b .loc-tabs .tablink:hover {
+          background: #004c8c; }
 
 #footer {
   padding: 4rem 0;
