@@ -35,13 +35,31 @@
   margin-bottom: 1rem; }
   .background-card img {
     height: auto;
-    width: auto;
-    max-height: 250px;
-    border-radius: 15px;
-    border: 5px solid #cccccc; }
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+    margin-bottom: .5rem; }
   .background-card h2 {
     text-transform: uppercase;
     color: #004c8c; }
+
+.background-card-test {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 1rem;
+  text-align: left; }
+  .background-card-test img {
+    height: auto;
+    width: 95%;
+    border-radius: 50%;
+    border: 5px solid #cccccc; }
+  .background-card-test h2 {
+    text-transform: uppercase;
+    color: #004c8c;
+    text-align: center; }
+  .background-card-test h3 {
+    text-align: center;
+    padding-bottom: 2rem; }
 
 .btn-learn {
   display: block;
@@ -54,14 +72,18 @@
   .btn-learn:hover {
     background: #f5a44f; }
 
+.current {
+  background: #004c8c !important;
+  color: white;
+  font-weight: bolder; }
+
 * {
   padding: 0;
   margin: 0; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #d0eaff;
-  background: url(/img/webb.png) repeat; }
+  background: white; }
 
 ul {
   list-style-type: none; }
@@ -104,54 +126,51 @@ a {
     #main-nav a:hover {
       background: #004c8c;
       color: white; }
-  #main-nav .current {
-    background: #004c8c;
-    color: white;
-    font-weight: bolder; }
   #main-nav img {
     height: auto;
     width: auto;
     max-height: 5rem; }
 
-#home #home-a {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2.5rem 0;
-  align-items: center;
-  text-align: left; }
-  #home #home-a h1 {
-    font-size: 3rem;
-    color: #0072ae; }
-  #home #home-a span {
-    color: #004c8c; }
-  #home #home-a .images {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #home #home-a .images img {
-      padding-left: .5rem;
-      height: auto;
-      width: auto;
-      max-height: 250px;
-      border-radius: 50%; }
-
-#home #home-b {
-  padding-bottom: 3rem;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 2fr 1fr 1fr; }
-  #home #home-b #our-prosthetics .inner-cols {
+#home {
+  background: url(/img/webb.png) repeat; }
+  #home #home-a {
     display: grid;
-    margin: 1rem 0;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    text-align: center; }
-    #home #home-b #our-prosthetics .inner-cols h3 {
-      color: #222; }
-    #home #home-b #our-prosthetics .inner-cols div {
-      padding: .5rem;
-      background: #ededed;
-      border-radius: 15px; }
+    padding: 2.5rem 0;
+    align-items: center;
+    text-align: left; }
+    #home #home-a h1 {
+      font-size: 3rem;
+      color: #0072ae; }
+    #home #home-a span {
+      color: #004c8c; }
+    #home #home-a .images {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #home #home-a .images img {
+        padding-left: .5rem;
+        height: auto;
+        width: auto;
+        max-height: 250px;
+        border-radius: 50%; }
+  #home #home-b {
+    padding-bottom: 3rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 2fr 1fr 1fr; }
+    #home #home-b #our-prosthetics .inner-cols {
+      display: grid;
+      margin: 1rem 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      text-align: center; }
+      #home #home-b #our-prosthetics .inner-cols h3 {
+        color: #222; }
+      #home #home-b #our-prosthetics .inner-cols div {
+        padding: .5rem;
+        background: #ededed;
+        border-radius: 15px; }
 
 #about .about-banner {
   width: 100%;
@@ -162,36 +181,76 @@ a {
 
 #about #about-a {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1.5rem;
   padding: 2rem 0;
   align-items: start;
   justify-content: center; }
   #about #about-a .background {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem; }
 
+*, *:focus, *:hover {
+  outline: none; }
+
+#contact .container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1.5rem; }
+
 #contact #contact-a {
+  margin: 2rem 0;
+  box-shadow: 0 5px 10px #cccccc;
+  border-radius: 25px;
+  border: 1px solid #cccccc;
+  padding: 2rem 3rem; }
+  #contact #contact-a #contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between; }
+  #contact #contact-a h2 {
+    color: #080f5b;
+    padding-bottom: 1rem; }
+  #contact #contact-a .text-fields {
+    display: flex;
+    flex-direction: column; }
+    #contact #contact-a .text-fields .text-input {
+      font-size: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 25px;
+      border: 1px solid #0072ae; }
+    #contact #contact-a .text-fields .text-input:focus {
+      -webkit-box-shadow: 0 0 5px #0072ae;
+      -moz-box-shadow: 0 0 5px #0072ae;
+      box-shadow: 0 0 5px #0072ae; }
+    #contact #contact-a .text-fields textarea {
+      height: 200px; }
+  #contact #contact-a button {
+    display: block;
+    border: none;
+    font-size: 1rem; }
+
+#contact #contact-b {
   margin: 2rem 0;
   background: #0072ae;
   overflow: hidden;
   border-radius: 25px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  box-shadow: 0 0 10px #cccccc; }
-  #contact #contact-a iframe {
+  box-shadow: 0 5px 10px #cccccc; }
+  #contact #contact-b iframe {
     width: 100%;
     display: block; }
-  #contact #contact-a #tab-contents #Hamilton {
+  #contact #contact-b #tab-contents #Hamilton {
     display: none; }
-  #contact #contact-a #tab-contents #StLucia {
+  #contact #contact-b #tab-contents #StLucia {
     display: none; }
-  #contact #contact-a .loc-tabs {
+  #contact #contact-b .loc-tabs {
     display: flex;
-    flex-direction: column;
     align-items: center; }
-    #contact #contact-a .loc-tabs .tablink {
+    #contact #contact-b .loc-tabs .tablink {
       display: block;
       width: 100%;
       padding: 2rem 0;
@@ -199,10 +258,11 @@ a {
       background: #0072ae;
       color: white;
       font-size: 1.25rem;
+      text-transform: uppercase;
       font-weight: bold;
       transition: all .5s;
       border-bottom: 1px solid #004c8c; }
-      #contact #contact-a .loc-tabs .tablink:hover {
+      #contact #contact-b .loc-tabs .tablink:hover {
         background: #004c8c; }
 
 #footer {
