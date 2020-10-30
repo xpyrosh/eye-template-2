@@ -286,8 +286,9 @@ a {
 
 #learn {
   background: url(/img/bg-1.png);
-  background-repeat: repeat-y;
-  background-size: 100% auto; }
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed; }
   #learn .container {
     padding: 2.5rem 0; }
   #learn h1 {

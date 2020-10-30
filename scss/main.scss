@@ -301,8 +301,9 @@ a {
 
 #learn {
     background: url(/img/bg-1.png);
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: 100% auto;
+    background-attachment: fixed;
     .container {
         padding: 2.5rem 0;
     }
