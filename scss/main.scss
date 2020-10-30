@@ -9,9 +9,7 @@
 body {
     // font-family: 'Raleway', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    // background: $bg-color;
     background: white;
-    // background: url(/img/webb.png) repeat;
 }
 
 ul {
@@ -24,9 +22,10 @@ a {
 
 #main-nav {
     background: $eye-color;
-    // background: url(/img/nav-banner.png) repeat;
-
-    box-shadow: 0px 0px 10px #979797;
+    background: linear-gradient(#00a6ff, #0072ae);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -5px 20px black;
 
     #nav-heading{
         display: flex;
@@ -85,6 +84,8 @@ a {
 
 #home {
     background: url(/img/webb.png) repeat;
+    z-index: 0;
+    // overflow: hidden;
     #home-a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -215,7 +216,7 @@ a {
 
             .text-input {
                 font-size: 1rem;
-                padding: 1rem;
+                padding: .5rem 1rem;
                 margin-bottom: 1rem;
                 border-radius: 25px;
                 border: 1px solid rgb(180, 180, 180);
@@ -281,7 +282,7 @@ a {
             .tablink {
                 display: block;
                 width: 100%;
-                padding: 2rem 0;
+                padding: 1rem 0;
                 margin: 0;
                 background: $eye-color;
                 color: white;
@@ -298,9 +299,139 @@ a {
     }
 }
 
+#learn {
+    .container {
+        padding: 2.5rem 0;
+    }
+    h1 {
+        font-size: 2.25rem;
+        text-transform: uppercase;
+        color: $eye-color;
+        padding-bottom: .5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+        color: $primary-color;
+    }
+    p {
+        padding-top: .5rem;
+        padding-bottom: 2rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        // text-align: left;
+    }
+    .learn-content-section {
+        margin: auto;
+        margin-bottom: 3rem;
+        max-width: 800px;
+    }
+
+    #learn-e{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        // https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+        .gallery-container{
+            position: relative;
+            max-width: 1000px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .55);
+            
+            /* Hide the images by default */
+            .mySlides {
+                display: none;
+            }
+            
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+                cursor: pointer;
+            }
+            
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            
+            .prev {
+                left: 0;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            
+            /* Container for image text */
+            .caption-container {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background-color: #222;
+                padding: 2px 16px;
+                color: white;
+            }
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Six columns side by side */
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+            
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+                opacity: 0.6;
+            }
+            
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
 #footer {
     padding: 4rem 0;
-    box-shadow: 0px 0px 10px #cccccc;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .55);
     background: #f9f9f9;
 
     .footer-content {
